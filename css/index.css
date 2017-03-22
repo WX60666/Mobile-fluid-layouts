@@ -1,0 +1,271 @@
+@charset "utf-8";
+html{
+    font-size: 625%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+div figure figcaption{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    font-size: 0.16rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: .2rem;
+}
+.none{
+    display: none;
+}
+
+#header{
+    width: 100%;
+    height: 0.45rem;
+    background-color: #333;
+    font-size: 0.16rem;
+    /*头部固定*/
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+#header .link{
+    height: 0.45rem;
+    color: #eee;
+    line-height: 0.45rem;
+}
+#header .link li{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+#header .link a{
+    display: block;
+    color: #fff;
+}
+#header .link a:hover{
+    background-color: #000;
+}
+#header .active a{
+    background-color: #000;
+}
+#adver {
+    max-width: 6.4rem;
+    margin: 0 auto;
+    padding: 0.45rem 0 0 0 ;
+}
+#search{
+    max-width: 6.4rem;
+    height: 0.33rem;
+    background-color: #ddd;
+    margin: 0 auto;
+    position: relative;
+    padding:0.03rem 0 0 0;
+}
+#search .search{
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    width: 95%;
+    font-size: .14rem;
+    border-radius: 0.04rem;
+    background-color: #fff;
+    border: none;
+    height: .27rem;
+    padding: 0 0.05rem;
+}
+#search .button{
+    display: block;
+    background-color: #eee;
+    outline:none;
+    color:#666;
+    width: .5rem;
+    height: .27rem;
+    border: none;
+    border-top-right-radius: 0.04rem;
+    border-bottom-right-radius: 0.04rem;
+    position: absolute;
+    top:0.03rem;
+    right: 1%;
+}
+#tour{
+    max-width: 6.4rem;
+    margin: 0.1rem auto 0 auto;
+}
+#tour h2{
+    text-align: center;
+    color: #666;
+    font-size: .26rem;
+}
+#tour h3{
+    text-align: center;
+    color: #666;
+    font-weight: normal;
+    font-size: .16rem;
+    margin: .05rem 0 .1rem 0;
+}
+#tour figure{
+    width: 50%;
+    float: left;
+    background-color: #eee;
+    font-size: .16rem;
+    padding: 0 0 .05rem 0;
+}
+#tour figure img{
+    width: 3.14rem;
+    padding: .02rem;
+    vertical-align: middle;
+    border-radius: .04rem;
+}
+#tour figcaption{
+    color: #666;
+    padding: .02rem .05rem;
+
+}
+#tour figcaption h4{
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#tour p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#tour .detail{
+    padding: .1rem 0 0 0;
+    font-size: .16rem;
+}
+#tour .price{
+    color: #f50;
+}
+#tour .price strong{
+    letter-spacing: .01rem;
+}
+#tour .set{
+    color:#999;
+    font-style: normal;
+    float: right;
+    position: relative;
+    right: .05rem;
+}
+
+#footer{
+    max-width: 6.4rem;
+    color: #777;
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #222;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: .16rem;
+}
+#footer .top{
+    padding:0 0 0.05rem 0;
+}
+
+
+/*imformation*/
+#headline img{
+    width: 6.4rem;
+    /*margin: 0 auto;*/
+}
+#headline{
+    max-width: 6.4rem;
+    margin: 0 auto;
+    padding: .45rem 0 0 0;
+    position: relative;
+}
+#headline .oo{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #eee;
+}
+#headline h2{
+    font-size: .22rem;
+}
+#headline h3{
+    font-size: .16rem;
+}
+.list{
+    max-width: 6.4rem;
+    margin: .15rem auto;
+    font-size: .16rem;
+    padding:0 .1rem;
+    color:#666;
+}
+.list h2{
+    font-size: .2rem;
+    border-bottom: .01rem dashed #999;
+    padding:0 0 .15rem 0;
+}
+.about p{
+    line-height: 2;
+    margin: .2rem 0;
+
+}
+.about .address{
+    font-style: normal;
+    margin: .2rem 0;
+    line-height: 1;
+}
+
+/*媒体查询,大于480 小于640*/
+@media (min-width: 480px) and(max-width: 640px) {
+    #tour h2{
+        font-size: .26rem;
+    }
+    #tour h3,#footer,#tour figure,#tour .detail,.list{
+        font-size: .16rem;
+    }
+    #headline h2{
+        font-size: .22rem;
+    }
+    #headline h3{
+        font-size: .14rem;
+    }
+    .list h2{
+        font-size: .2rem;
+    }
+
+}
+/*媒体查询,小于480*/
+@media (max-width: 480px) {
+    #tour h2{
+        font-size: .20rem;
+    }
+    #tour h3,#tour figure,#tour .detail,.list{
+        font-size: .12rem;
+    }
+    #footer{
+        font-size: 0.13rem;
+    }
+    #headline h2{
+        font-size: .14rem;
+    }
+    #headline h3{
+        font-size: .12rem;
+    }
+    .list h2{
+        font-size: .17rem;
+    }
+}
